@@ -1,66 +1,44 @@
-## Foundry
+# NFT Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This was made posible by following the Cyfrin foundry course
 
-Foundry consists of:
+This Project contains two types of NFTs
+    1. IPFS Hosted NFT
+    2. SVG NFT (Hosted 100% on chain) 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Introduction 
 
-## Documentation
+- The IPFS Hosted NFT is called "LoveYouMama" ^_^
+- The SVG NFT is a DynamicNFT which represents 2 emotions: Happy and Sad. It changes according to the Mood of the owner
 
-https://book.getfoundry.sh/
 
-## Usage
+<p align="center">
+<img src="img/LYM.png" alt="LoveYouMama NFT" width="400" height="225"> 
+<img src="img/happy.svg" alt="Happy NFT" width="400" height="225"> 
+<img src="img/sad.svg" alt="Sad NFT" width="400" height="225"> 
+</p>
 
-### Build
+## Prerequisities
 
-```shell
-$ forge build
+To work on this project, you need the following tools installed:
+- [Foundry](https://getfoundry.sh/) (for testing and deploying smart contracts)
+- - An Ethereum wallet like [Metamask](https://metamask.io/)
+
+## Clone the Repository 
+
+   ```bash
+   git clone https://github.com/DontMind-me/NFT-ERC721-24
+   cd NFT-ERC721-24
+   ```
+
+## Installs
+
+To interact with the contract, you will have to download the following packages.
+
+```bash
+forge install openzeppelin/openzeppelin-contracts@v5.0.2 --no-commit
 ```
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```bash
+forge install cyfrin/foundry-devops@0.2.2 --no-commit
 ```

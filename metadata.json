@@ -1,0 +1,16 @@
+{
+    "name": "LoveYouMama",
+    "description": "An NFT to express your appreciation for your Mother :)",
+    "image": "https://ipfs.io/ipfs/QmeMG8tSqe76wcdbNegJgkENrw9pTy1pXUCxeh2L1oMq2a",
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Balck"
+      },
+      {
+        "trait_type": "Text",
+        "value": "Neon Purple"
+      }
+    ]
+  }
+  
